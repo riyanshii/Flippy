@@ -1,0 +1,82 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+body{
+    overflow: hidden;
+}
+
+.gameover{
+    position: relative;
+    top:70px;
+    font-size: 70px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    /* visibility:hidden; */
+}
+#scorecard{
+    position: absolute;
+    left:85vw;
+    top:5vh;
+    display: inline;
+    border: 2px solid black;
+    justify-content: end;
+}
+.img{
+    background-image: url("bg.jpg") ;
+    background-repeat: no-repeat; 
+    overflow-x: hidden;
+    overflow-y:hidden;
+    width: 100vw;
+    min-height: 100vh;
+}
+.nobita{
+    background-image:url("nobita1.png");
+    background-size: cover; 
+    width: 180px; 
+    height: 200px;  
+    background-repeat: no-repeat;
+    position: absolute;
+    bottom: 0;
+    left:20vw;
+}
+.doremon{
+    background-image: url("doremon1.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    bottom: 0;
+    left:87vw;
+}
+
+.anobita{
+    animation: nob 0.8s linear;
+}
+
+.adoremon{
+    animation: dor 2.5s linear infinite;
+}
+@keyframes nob{
+    0%{
+       bottom: 0;
+    }
+    50%{
+        bottom:500px;
+         /* left:30vw; */
+    }
+    100%{
+        bottom:0;
+        /* left:25vw; */
+    }
+}
+
+@keyframes dor{
+    0%{
+        left:87vw;
+    }
+    100%{
+        left: 0vw;
+    }
+}
